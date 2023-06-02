@@ -37,30 +37,30 @@ db.once('open', async () => {
       quantity: 150
     },
     {
-      name: 'BenQ - SW240 24" IPS LED WUXGA 60Hz Monitor for Photo Editing 99% Adobe RGB, 100% sRGB, 95% DCI-P3 (DVI-DL/HDMI/USB Hub) - Gray',
+      name: 'Steelcase - Gesture Shell Back Office Chair - Night Owl',
       category: categories[1]._id,
       description:
-        'The stand is easy to assemble and connection to the computer was a breeze. Even though the monitor is calibrated from the factory, the user must calibrate color and brightness for the specific environment where the monitor is used. ...Excellent monitor...This monitor is used with laptop and colors are excellent for photo editing.',
+        'Perfect for the endurance sitter and technology power user, Gesture adapts to your every move, and every device you use, to provide ultimate, long-lasting comfort and support for your body. With the most inclusive fit of any chair in our portfolio, everyone feels comfortable sitting in Gesture. Our proprietary seat cushion design leverages built in air pockets that conform to your body and reduce pressure that comes from long term sitting.',
       image: 'toilet-paper.jpg',
-      price: 399.99,
+      price: 1329.99,
       quantity: 70
     },
     {
-      name: 'Handmade Soap',
+      name: 'Insignia™ - Essential PC Gaming Chair - Black',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
+        'Whether you enjoy gaming for the competition or just to relax, you deserve to be comfortable while doing it. With the Insignia NS-PCGV30 PC Gaming Chair, feel free to sit back and game the day away. With an adjustable seat height and a swivel and tilt mechanism, adjust the chair to your liking for optimum comfort and support.',
+      image: 'chair.jpg',
+      price: 119.99,
       quantity: 50
     },
     {
-      name: 'Set of Wooden Spoons',
+      name: 'Insignia™ - Ergonomic Mesh Office Chair with Adjustable Arms - Black',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
+        'Your office chair should be nothing but comfortable. With the Insignia NS-FPAMC23 Ergonomic Mesh Office Chair with Adjustable Arms, feel free to sit back and work away. With an adjustable seat, arm rest and a swivel and tilt mechanism, adjust the chair to your liking for optimum comfort and support. This chair also has reinforced lumbar support, alleviating unnecessary strain on your lower back.',
+      image: 'chair.jpg',
+      price: 169.99,
       quantity: 100
     },
     {

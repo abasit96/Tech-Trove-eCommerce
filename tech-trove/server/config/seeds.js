@@ -5,11 +5,12 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Monitors' },
+    { name: 'Chairs' },
+    { name: 'Keyboards' },
+    { name: 'Mice' },
+    { name: 'Headsets' },
+    { name: 'Miscellaneous' }
   ]);
 
   console.log('categories seeded');
@@ -18,31 +19,31 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: ' Lenovo - ThinkVision M15 15.6" LED Mobile Monitor (USB 3.1 Type-C) - Black ',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'The power pass through to the laptop works well, letting me have a monitor and laptop on the same USB-C charger even though the laptop only has the one USB-C port! ...There is no lag time from moving from laptop screen to the monitor and back, and I’m whipping through edits in a fast paced event. ...Great monitor!',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 209.99,
+      quantity: 100
     },
     {
-      name: 'Canned Coffee',
+      name: 'ASUS - ZenScreen 15.6” IPS LED FHD USB Type-C Portable Monitor with Foldable Smart Case - Dark Gray',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'Great Monitor for the price...Clear picture, great second monitor to extend your laptop desktop. The price is better than most for what you get....This is the portable monitor you want!...Excellent monitor for the price! East to set up and fits in laptop bag with no problem!',
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 209.99,
+      quantity: 150
     },
     {
-      name: 'Toilet Paper',
+      name: 'BenQ - SW240 24" IPS LED WUXGA 60Hz Monitor for Photo Editing 99% Adobe RGB, 100% sRGB, 95% DCI-P3 (DVI-DL/HDMI/USB Hub) - Gray',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'The stand is easy to assemble and connection to the computer was a breeze. Even though the monitor is calibrated from the factory, the user must calibrate color and brightness for the specific environment where the monitor is used. ...Excellent monitor...This monitor is used with laptop and colors are excellent for photo editing.',
       image: 'toilet-paper.jpg',
-      price: 7.99,
-      quantity: 20
+      price: 399.99,
+      quantity: 70
     },
     {
       name: 'Handmade Soap',

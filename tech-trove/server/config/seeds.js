@@ -24,7 +24,7 @@ db.once('open', async () => {
         'The power pass through to the laptop works well, letting me have a monitor and laptop on the same USB-C charger even though the laptop only has the one USB-C port! ...There is no lag time from moving from laptop screen to the monitor and back, and I’m whipping through edits in a fast paced event. ...Great monitor!',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
-      price: 209.99,
+      price: 200.99,
       quantity: 100
     },
     {

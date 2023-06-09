@@ -1,7 +1,7 @@
 :root {
   --primary: #232F3E;
   --secondary: #00aff0;
-  --tertiary: #333;
+  --tertiary: black;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -9,8 +9,12 @@
   --spacing-two: calc(1rem);
 }
 
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
+
 * {
   box-sizing: border-box;
+  
 }
 
 .image-box {
@@ -34,11 +38,12 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
+ 
   
 }
 
@@ -48,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -102,7 +107,7 @@ header a {
 }
 
 button {
-  font-size: 1rem;
+  /* font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
   border-radius: .5rem;
@@ -110,7 +115,22 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--secondary); */
+  background-image: linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%)  ;
+  border-radius: 8px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  touch-action: manipulation;
+  margin: 0 2px;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -156,6 +176,7 @@ input:focus {
   opacity: 0;
   animation: fadeIn 1s 1s;
   animation-fill-mode: forwards;
+  
 }
 
 .flex-row {
@@ -225,3 +246,5 @@ input:focus {
     width: 100%;
   }
 }
+
+

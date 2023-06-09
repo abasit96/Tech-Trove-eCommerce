@@ -13,6 +13,19 @@
   box-sizing: border-box;
 }
 
+.image-box {
+  height: 250px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.image-box img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 html,
 body {
   min-height: 100%;

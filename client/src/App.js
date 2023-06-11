@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   ApolloClient,
@@ -6,18 +7,22 @@ import {
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { setContext } from '@apollo/client/link/context';
-
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
+import Footer from "./components/Footer"
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import 'animate.css'
+// import CategoryPage from "./pages/Categories.js"
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -45,6 +50,8 @@ function App() {
         <div>
           <StoreProvider>
             <Nav />
+            
+            
             <Routes>
               <Route 
                 path="/" 
@@ -74,7 +81,11 @@ function App() {
                 path="*" 
                 element={<NoMatch />} 
               />
+              {/* <Route path="/category/:id" element={<CategoryPage />} /> */}
+
+              
             </Routes>
+            <Footer />
           </StoreProvider>
         </div>
       </Router>
